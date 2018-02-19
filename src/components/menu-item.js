@@ -9,6 +9,7 @@ const MenuItem = props =>
       <p className="price">{props.price}</p>
     </div>
   )
+
 MenuItem.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
