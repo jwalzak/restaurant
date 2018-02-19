@@ -1,0 +1,65 @@
+/* Coolers
+  #E4572E -- Flame
+  #17BEBB -- Tiffany Blue
+  #E980FC -- Violet (web)
+  #06BA63 -- Go Green
+  #103900 -- Phthalo Green
+  #FFD23F -- Sunglow
+  */
+
+html {
+  margin: 0;
+}
+
+body, h1, p {
+  /* display: inline-block; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+  background: #103900;
+  color: #FFD23F;
+  height: 20vh;
+  width: 100vw;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  background: #E4572E;
+  height: 60vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.menu h1 {
+  text-align: center;
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+}
+
+.footer {
+  height: 20vh;
+  width: 100vw;
+  background: #F0F0F0;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__items {
+  display: inline-block;
+  border: 1px solid #103900;
+  width: 150px;
+}
+
+.food-name {
+  border-bottom: 1px solid black;
+}
