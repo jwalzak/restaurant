@@ -48,8 +48,9 @@ class Menu extends Component {
     return (
       <div className="menu">
         <h1>Our Menu</h1>
-        {this.state.menuItems.map(menuItem => (
+        {this.state.menuItems.map((menuItem, i) => (
           <MenuItem
+            key={i}
             name={menuItem.name}
             description={menuItem.description}
             price={menuItem.price}

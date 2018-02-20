@@ -20,27 +20,35 @@ body, h1, p {
 
 .header {
   background: #103900;
-  color: #FFD23F;
-  height: 20vh;
+  background: url('../images/eggs-ben.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #06BA63;
+  height: 30vh;
   width: 100vw;
   text-align: center;
+  font-size: 2.5rem;
   padding: 0;
   margin: 0;
+}
+.header h1{
+  height: 30vh;
+  background: rgba(0, 0, 0, 0.09);
 }
 
 .menu {
   background: #E4572E;
-  height: 50vh;
   width: 100vw;
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 1fr 1fr;
-  grid-gap: 0px;
+  grid-gap: 10px;
 }
 
 .menu h1 {
+  color: #FFD23F;
   text-align: center;
   grid-column: 1 / -1;
   grid-row: 1 / 1;
@@ -58,6 +66,7 @@ body, h1, p {
   display: inline-block;
   border: 1px solid #103900;
   width: 150px;
+  justify-self: center;
 }
 
 .food-name {
@@ -65,7 +74,6 @@ body, h1, p {
 }
 
 .map {
-  width: 40vw;
   margin: auto;
 }
 
