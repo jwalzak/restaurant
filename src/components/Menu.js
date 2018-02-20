@@ -1,47 +1,37 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Rebase from 're-base'
+import firebase from 'firebase'
 
 import MenuItem from './menu-item'
+import config from './config'
+
+const app = firebase.initializeApp({
+  apiKey: config.MAP_KEY,
+  authDomain: config.MAP_DOMAIN,
+  databaseURL: config.DB_URL,
+  storageBucket: config.STORAGE_BUCKET,
+  messagingSenderId: config.SENDER_ID,
+})
+
+const db = firebase.database(app)
+const base = Rebase.createClass(db)
 
 class Menu extends Component {
   constructor() {
     super()
 
     this.state = {
-      menuItems: [
-        {
-          name: 'Bagel',
-          description: 'A homemade bagel with unsalted butter',
-          price: 2.99,
-        },
-        {
-          name: 'Bowl of Cereal',
-          description: 'A bowl of cereal, our choice',
-          price: 21.99,
-        },
-        {
-          name: 'Fried egg and toast',
-          description:
-            'A fried egg, done your way with two sclices of our famous Ontario toast',
-          price: 4.99,
-        },
-        {
-          name: 'Bacon and Eggs',
-          description: 'Two eggs, 4 Bacons, 2 Toasts',
-          price: 4.99,
-        },
-        {
-          name: 'Sausage and Eggs',
-          description: 'Two eggs, 4 Sausages, 2 Toasts',
-          price: 4.99,
-        },
-        {
-          name: 'Eggs Benedict',
-          description: 'Our Homemade Hollondaise sauce on two over easy eggs places on an English muffin and topped with salmon and capers',
-          price: 9.99
-        }
-      ],
+      menuItems: [],
     }
+  }
+
+  componentDidMount() {
+    base.syncState('menu', {
+      context: this,
+      asArray: true,
+      state: 'menuItems',
+    })
   }
 
   render(props) {
