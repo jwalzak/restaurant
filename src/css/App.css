@@ -30,7 +30,7 @@ body, h1, p {
 
 .menu {
   background: #E4572E;
-  height: 60vh;
+  height: 50vh;
   width: 100vw;
   padding: 0;
   margin: 0;
@@ -47,7 +47,7 @@ body, h1, p {
 }
 
 .footer {
-  height: 20vh;
+  height: 30vh;
   width: 100vw;
   background: #F0F0F0;
   padding: 0;
@@ -62,4 +62,15 @@ body, h1, p {
 
 .food-name {
   border-bottom: 1px solid black;
+}
+
+.map {
+  width: 40vw;
+  margin: auto;
+}
+
+.marker {
+  background: #000;
+  width: 10px;
+  height: 10px;
 }
