@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import '../css/App.css'
 
 // Components
@@ -21,12 +20,17 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header name="That Breakfast Place" />
-        <About />
-        <Menu />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div className="container">
+          <Header name="That Breakfast Place" />
+          <Switch>
+            <Route exact path="/" component={Menu} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/menu" component={Menu} />
+          </Switch>
+          <Footer />
+        </div>
+      </BrowserRouter>
     )
   }
 }
