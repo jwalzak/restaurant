@@ -5,6 +5,7 @@ import '../css/App.css'
 
 // Components
 import Header from './Header'
+import About from './About'
 import Menu from './Menu'
 import Footer from './Footer'
 
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <div>
         <Header name="That Breakfast Place" />
+        <About />
         <Menu />
         <Footer />
       </div>

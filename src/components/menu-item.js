@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const MenuItem = props =>
   (
     <div className="menu__items">
-      <p className="food-name">{props.name}</p>
+      <h3 className="food-name">{props.name}</h3>
       <p className="food-desc">{props.description}</p>
       <p className="price">{props.price}</p>
     </div>
