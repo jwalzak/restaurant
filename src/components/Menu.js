@@ -43,7 +43,8 @@ class Menu extends Component {
             key={i}
             name={menuItem.name}
             description={menuItem.description}
-            price={`$${menuItem.price}`}
+            price={menuItem.price}
+            category={menuItem.category}
           />
         ))}
       </div>
@@ -54,7 +55,7 @@ class Menu extends Component {
 MenuItem.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
 }
 
 export default Menu

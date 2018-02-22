@@ -1,4 +1,4 @@
-/* Coolers
+/* Coolors
   #E4572E -- Flame
   #17BEBB -- Tiffany Blue
   #E980FC -- Violet (web)
@@ -7,23 +7,32 @@
   #FFD23F -- Sunglow
   */
 
+/* New Coolors
+  #0D0106 -- Smoky Black
+  #3626A7 -- Blue (pigment)
+  #657ED4 -- Livid
+  #FF331F -- Red (RYB)
+  #FBFBFF -- Ghost White
+*/
+
 html {
   margin: 0;
 }
 
-body, h1, p {
-  /* display: inline-block; */
+body,
+h1,
+p {
   margin: 0;
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header {
-  background: #103900;
   background: url('../images/eggs-ben.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: #06BA63;
+  color: #ff331f;
+  font-weight: bold;
   height: 30vh;
   width: 100vw;
   text-align: center;
@@ -31,52 +40,46 @@ body, h1, p {
   padding: 0;
   margin: 0;
 }
-.header h1{
-  /* height: 30vh; */
-  background: rgba(0, 0, 0, 0.09);
-}
 
 .menu {
-  background: #E4572E;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #3626a7;
   width: 100vw;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
   grid-gap: 20px;
 }
 
 .menu h1 {
-  color: #FFD23F;
+  background: #3626a7;
+  color: #657ed4;
+  font-size: 3rem;
   text-align: center;
   grid-column: 1 / -1;
   grid-row: 1 / 1;
 }
 
-.footer {
-  height: 30vh;
-  width: 100vw;
-  background: #F0F0F0;
-  padding: 0;
-  margin: 0;
-}
-
 .menu__items {
-  width: 100%;
-  padding-left: 3%;
-  border: 1px solid #103900;
-  justify-self: center;
-}
-
-.menu__items h3 {
-  padding: 0;
-  margin: 0;
-  text-align: center;
+  background: #3626a7;
+  color: #fbfbff;
+  grid-column: 1;
+  display: flex;
+  align-items: stretch;
+  align-content: space-around;
 }
 
 .food-name {
-  border-bottom: 1px solid black;
+  order: 2;
+  padding-left: 25%;
+  align-self: flex-end;
+}
+
+.price {
+  order: 1;
+  align-self: flex-start;
 }
 
 .map {
@@ -84,16 +87,15 @@ body, h1, p {
 }
 
 .marker {
-  background: #000;
+  background: #0d0106;
   width: 10px;
   height: 10px;
 }
 
 .nav {
   font-size: 2rem;
-  padding-top: 3rem;
+  padding: 0;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-transform: uppercase;
   float: left;
 }
 
@@ -102,8 +104,10 @@ li {
   display: inline;
 }
 
-a {
-  border-bottom: 3px solid white;
-  text-decoration: none;
-  color: black;
+.footer {
+  height: 30vh;
+  width: 100vw;
+  background: #f0f0f0;
+  padding: 0;
+  margin: 0;
 }

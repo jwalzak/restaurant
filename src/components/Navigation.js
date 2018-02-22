@@ -5,9 +5,9 @@ export default class Navigation extends Component {
     return (
       <div className='nav'>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About us</a></li>
-          <li><a href="/menu">Menu</a></li>
+          <li><a className='link' href="/">Home</a></li>
+          <li><a className='link' href="/about">About us</a></li>
+          <li><a className='link' href="/menu">Menu</a></li>
         </ul>
       </div>
     )
