@@ -104,6 +104,14 @@ li {
   display: inline;
 }
 
+.tbp-outside {
+  height: 50%;
+  width: 50%;
+  border: 1px solid #0D0106;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
 .footer {
   height: 30vh;
   width: 100vw;

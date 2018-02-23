@@ -6,10 +6,14 @@ export default class About extends Component {
       <div className="about">
         <h1>About Us</h1>
         <p>
-          We are a hidden gem in the heart of Port Stanley Ontario Serving our
-          customers since 1980. Previously we were located at the enterance to
-          Port Stanley at the top of the hill. Today we are in the historic
-          stufler building.
+          Located in the heart of Port Stanley Ontario, That Breakfast Place has
+          been serving our enthusiastic lclients for the last 20 years. Open
+          daily until 14:00.
+        </p>
+        <img src={require('../images/breakfast1.jpg')} alt="" className='tbp-outside'/>
+        <p>
+          Come on in and enjoy the view of the Port Stanley Harbour and Lake
+          Erie.
         </p>
       </div>
     )
