@@ -23,9 +23,8 @@ class Footer extends Component {
           title={'Find us near the lift bridge in Port Stanley Ontario'}
         >
           <Marker
-            lat={42.66571}
-            lng={-81.2134618}
-            text={'This is where we are'}
+            lat={42.66581}
+            lng={-81.2135618}
           />
         </GoogleMapReact>
       </div>

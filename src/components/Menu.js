@@ -34,6 +34,12 @@ class Menu extends Component {
     })
   }
 
+  loadMenu() {
+    this.setState({
+      menuItems: [],
+    })
+  }
+
   render(props) {
     return (
       <div className="menu">

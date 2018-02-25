@@ -12,10 +12,12 @@ import Footer from './Footer'
 import menu from '../menu-items'
 
 class App extends Component {
-  loadMenu() {
-    this.setState({
-      menuItems: menu,
-    })
+  constructor() {
+    super()
+
+    this.state = {
+      menuItems: [],
+    }
   }
 
   render() {
