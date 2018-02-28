@@ -7,6 +7,8 @@ import Header from './Header'
 import About from './About'
 import Menu from './Menu'
 import Footer from './Footer'
+import AddItem from './AddItem'
+import NoMatch from './NoMatch'
 
 // Extras
 import menu from '../menu-items'
@@ -28,7 +30,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Menu} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/menu" component={Menu} />
+            <Route exact path="/additem" component={AddItem} />
+            <Route component={NoMatch} />
           </Switch>
           <Footer />
         </div>

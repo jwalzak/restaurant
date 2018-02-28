@@ -107,9 +107,29 @@ li {
 .tbp-outside {
   height: 50%;
   width: 50%;
-  border: 1px solid #0D0106;
+  border: 1px solid #0d0106;
   margin-top: 5%;
   margin-left: 5%;
+}
+
+.addItems {
+  display: block;
+}
+
+.legend {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+.inputText {
+  width: 120px;
 }
 
 .footer {

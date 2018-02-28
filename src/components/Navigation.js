@@ -7,7 +7,7 @@ export default class Navigation extends Component {
         <ul>
           <li><a className='link' href="/">Home</a></li>
           <li><a className='link' href="/about">About us</a></li>
-          <li><a className='link' href="/menu">Menu</a></li>
+          <li><a className='link' href="/additem">Add Item</a></li>
         </ul>
       </div>
     )
